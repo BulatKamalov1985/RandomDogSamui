@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		3964EAC729D432050018442D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAC629D432050018442D /* AppDelegate.swift */; };
 		3964EAC929D432050018442D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAC829D432050018442D /* SceneDelegate.swift */; };
-		3964EACB29D432050018442D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EACA29D432050018442D /* ViewController.swift */; };
-		3964EACE29D432050018442D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3964EACC29D432050018442D /* Main.storyboard */; };
 		3964EAD129D432050018442D /* RandomDogSamui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3964EACF29D432050018442D /* RandomDogSamui.xcdatamodeld */; };
 		3964EAD329D432080018442D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3964EAD229D432080018442D /* Assets.xcassets */; };
 		3964EAD629D432080018442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3964EAD429D432080018442D /* LaunchScreen.storyboard */; };
 		3964EAE129D432080018442D /* RandomDogSamuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAE029D432080018442D /* RandomDogSamuiTests.swift */; };
 		3964EAEB29D432080018442D /* RandomDogSamuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAEA29D432080018442D /* RandomDogSamuiUITests.swift */; };
 		3964EAED29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAEC29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift */; };
+		3964EAFB29D438F70018442D /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAFA29D438F70018442D /* MainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +39,6 @@
 		3964EAC329D432050018442D /* RandomDogSamui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomDogSamui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3964EAC629D432050018442D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3964EAC829D432050018442D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3964EACA29D432050018442D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3964EACD29D432050018442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3964EAD029D432050018442D /* RandomDogSamui.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomDogSamui.xcdatamodel; sourceTree = "<group>"; };
 		3964EAD229D432080018442D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3964EAD529D432080018442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,7 @@
 		3964EAE629D432080018442D /* RandomDogSamuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomDogSamuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3964EAEA29D432080018442D /* RandomDogSamuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogSamuiUITests.swift; sourceTree = "<group>"; };
 		3964EAEC29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogSamuiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3964EAFA29D438F70018442D /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +99,9 @@
 		3964EAC529D432050018442D /* RandomDogSamui */ = {
 			isa = PBXGroup;
 			children = (
+				3964EAF929D4388A0018442D /* Controller */,
 				3964EAC629D432050018442D /* AppDelegate.swift */,
 				3964EAC829D432050018442D /* SceneDelegate.swift */,
-				3964EACA29D432050018442D /* ViewController.swift */,
-				3964EACC29D432050018442D /* Main.storyboard */,
 				3964EAD229D432080018442D /* Assets.xcassets */,
 				3964EAD429D432080018442D /* LaunchScreen.storyboard */,
 				3964EAD729D432080018442D /* Info.plist */,
@@ -128,6 +125,14 @@
 				3964EAEC29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift */,
 			);
 			path = RandomDogSamuiUITests;
+			sourceTree = "<group>";
+		};
+		3964EAF929D4388A0018442D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3964EAFA29D438F70018442D /* MainTabController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +241,6 @@
 			files = (
 				3964EAD629D432080018442D /* LaunchScreen.storyboard in Resources */,
 				3964EAD329D432080018442D /* Assets.xcassets in Resources */,
-				3964EACE29D432050018442D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3964EACB29D432050018442D /* ViewController.swift in Sources */,
 				3964EAD129D432050018442D /* RandomDogSamui.xcdatamodeld in Sources */,
 				3964EAC729D432050018442D /* AppDelegate.swift in Sources */,
+				3964EAFB29D438F70018442D /* MainTabController.swift in Sources */,
 				3964EAC929D432050018442D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3964EACC29D432050018442D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3964EACD29D432050018442D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3964EAD429D432080018442D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +444,6 @@
 				INFOPLIST_FILE = RandomDogSamui/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,7 +455,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,7 +471,6 @@
 				INFOPLIST_FILE = RandomDogSamui/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,7 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
