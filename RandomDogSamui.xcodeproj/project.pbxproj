@@ -16,6 +16,9 @@
 		3964EAEB29D432080018442D /* RandomDogSamuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAEA29D432080018442D /* RandomDogSamuiUITests.swift */; };
 		3964EAED29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAEC29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift */; };
 		3964EAFB29D438F70018442D /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAFA29D438F70018442D /* MainTabController.swift */; };
+		3964EAFD29D43AF30018442D /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EAFC29D43AF30018442D /* HomePageVC.swift */; };
+		3964EB0329D43DD30018442D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0229D43DD30018442D /* TableViewController.swift */; };
+		3964EB0529D43DE90018442D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0429D43DE90018442D /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3964EAEA29D432080018442D /* RandomDogSamuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogSamuiUITests.swift; sourceTree = "<group>"; };
 		3964EAEC29D432080018442D /* RandomDogSamuiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogSamuiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3964EAFA29D438F70018442D /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		3964EAFC29D43AF30018442D /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		3964EB0229D43DD30018442D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3964EB0429D43DE90018442D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				3964EAFA29D438F70018442D /* MainTabController.swift */,
+				3964EAFC29D43AF30018442D /* HomePageVC.swift */,
+				3964EB0429D43DE90018442D /* CollectionViewController.swift */,
+				3964EB0229D43DD30018442D /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3964EAFD29D43AF30018442D /* HomePageVC.swift in Sources */,
+				3964EB0329D43DD30018442D /* TableViewController.swift in Sources */,
 				3964EAD129D432050018442D /* RandomDogSamui.xcdatamodeld in Sources */,
 				3964EAC729D432050018442D /* AppDelegate.swift in Sources */,
+				3964EB0529D43DE90018442D /* CollectionViewController.swift in Sources */,
 				3964EAFB29D438F70018442D /* MainTabController.swift in Sources */,
 				3964EAC929D432050018442D /* SceneDelegate.swift in Sources */,
 			);
