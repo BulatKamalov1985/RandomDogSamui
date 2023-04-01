@@ -9,13 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    var videoImageView = UIImageView()
-    var videoTitlelabel = UILabel()
+    var DogImageView = UIImageView()
+    var DogTitlelabel = UILabel()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        addSubview(videoImageView)
-        addSubview(videoTitlelabel)
+        addSubview(DogImageView)
+        addSubview(DogTitlelabel)
         configureImageView()
         configureTitleLabel()
         setImageConstraints()
@@ -26,34 +26,34 @@ class TableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(imageDog: Video) {
-        videoImageView.image = imageDog.image
-        videoTitlelabel.text = imageDog.title
+    func set(imageDog: TableViewCellModel) {
+        DogImageView.image = imageDog.image
+        DogTitlelabel.text = imageDog.title
     }
     
     func configureImageView() {
-        videoImageView.layer.cornerRadius = 10
-        videoImageView.clipsToBounds = true
+        DogImageView.layer.cornerRadius = 10
+        DogImageView.clipsToBounds = true
     }
     
     func configureTitleLabel() {
-        videoTitlelabel.numberOfLines = 0
-        videoTitlelabel.adjustsFontSizeToFitWidth = true
+        DogTitlelabel.numberOfLines = 0
+        DogTitlelabel.adjustsFontSizeToFitWidth = true
     }
     
     func setImageConstraints() {
-        videoImageView.translatesAutoresizingMaskIntoConstraints = false
-        videoImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        videoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
-        videoImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        videoImageView.widthAnchor.constraint(equalTo: videoImageView.heightAnchor, multiplier: 16/9).isActive = true
+        DogImageView.translatesAutoresizingMaskIntoConstraints = false
+        DogImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        DogImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
+        DogImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        DogImageView.widthAnchor.constraint(equalTo: DogImageView.heightAnchor, multiplier: 16/9).isActive = true
     }
     
     func setTitleLabelConstraints() {
-        videoTitlelabel.translatesAutoresizingMaskIntoConstraints = false
-        videoTitlelabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        videoTitlelabel.leadingAnchor.constraint(equalTo: videoImageView.trailingAnchor, constant: 20).isActive = true
-        videoTitlelabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        videoTitlelabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
+        DogTitlelabel.translatesAutoresizingMaskIntoConstraints = false
+        DogTitlelabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        DogTitlelabel.leadingAnchor.constraint(equalTo: DogImageView.trailingAnchor, constant: 20).isActive = true
+        DogTitlelabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        DogTitlelabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
     }
 }

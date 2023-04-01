@@ -11,10 +11,9 @@ class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureVC()
-        
     }
+    
     func configureVC(){
         let home = HomePageVC()
         home.tabBarItem.image = UIImage(systemName: "person.fill")

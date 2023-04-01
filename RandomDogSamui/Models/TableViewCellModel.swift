@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Video {
+struct TableViewCellModel {
     var image: UIImage
     var title: String
 }

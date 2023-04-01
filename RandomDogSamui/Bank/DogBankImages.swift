@@ -16,4 +16,9 @@ struct Images {
     static let dog6 = UIImage(named: "dog6")!
     static let dog7 = UIImage(named: "dog7")!
     static let dog8 = UIImage(named: "dog8")!
+    static let dog11 = UIImage(named: "dog11")!
+    static let dog13 = UIImage(named: "dog13")!
+    static let dog14 = UIImage(named: "dog14")!
+    static let dog15 = UIImage(named: "dog15")!
+    static let dog18 = UIImage(named: "dog18")!
 }

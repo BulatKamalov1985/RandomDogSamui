@@ -20,8 +20,11 @@
 		3964EB0329D43DD30018442D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0229D43DD30018442D /* TableViewController.swift */; };
 		3964EB0529D43DE90018442D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0429D43DE90018442D /* CollectionViewController.swift */; };
 		3964EB0729D45E710018442D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0629D45E710018442D /* TableViewCell.swift */; };
-		3964EB0B29D46CFC0018442D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0A29D46CFC0018442D /* Video.swift */; };
+		3964EB0B29D46CFC0018442D /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0A29D46CFC0018442D /* TableViewCellModel.swift */; };
 		3964EB0E29D470690018442D /* DogBankImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB0D29D470690018442D /* DogBankImages.swift */; };
+		3964EB1129D553E30018442D /* PhotoCellCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB1029D553E30018442D /* PhotoCellCV.swift */; };
+		3964EB1329D6EC190018442D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB1229D6EC190018442D /* Network.swift */; };
+		3964EB1629D6F3120018442D /* DogsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964EB1529D6F3120018442D /* DogsModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +62,11 @@
 		3964EB0229D43DD30018442D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3964EB0429D43DE90018442D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		3964EB0629D45E710018442D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		3964EB0A29D46CFC0018442D /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		3964EB0A29D46CFC0018442D /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
 		3964EB0D29D470690018442D /* DogBankImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBankImages.swift; sourceTree = "<group>"; };
+		3964EB1029D553E30018442D /* PhotoCellCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCellCV.swift; sourceTree = "<group>"; };
+		3964EB1229D6EC190018442D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3964EB1529D6F3120018442D /* DogsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +117,12 @@
 		3964EAC529D432050018442D /* RandomDogSamui */ = {
 			isa = PBXGroup;
 			children = (
+				3964EB1429D6F2F70018442D /* Managers */,
 				3964EAF929D4388A0018442D /* Controllers */,
 				3964EB0C29D4704A0018442D /* Bank */,
 				3964EB0929D46CCB0018442D /* Models */,
 				3964EB0829D45E810018442D /* Cells */,
-				3964EAC629D432050018442D /* AppDelegate.swift */,
-				3964EAC829D432050018442D /* SceneDelegate.swift */,
-				3964EAD229D432080018442D /* Assets.xcassets */,
-				3964EAD429D432080018442D /* LaunchScreen.storyboard */,
+				3964EB0F29D546D30018442D /* Supporting */,
 				3964EAD729D432080018442D /* Info.plist */,
 				3964EACF29D432050018442D /* RandomDogSamui.xcdatamodeld */,
 			);
@@ -156,6 +160,7 @@
 		3964EB0829D45E810018442D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3964EB1029D553E30018442D /* PhotoCellCV.swift */,
 				3964EB0629D45E710018442D /* TableViewCell.swift */,
 			);
 			path = Cells;
@@ -164,7 +169,8 @@
 		3964EB0929D46CCB0018442D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3964EB0A29D46CFC0018442D /* Video.swift */,
+				3964EB0A29D46CFC0018442D /* TableViewCellModel.swift */,
+				3964EB1529D6F3120018442D /* DogsModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +181,25 @@
 				3964EB0D29D470690018442D /* DogBankImages.swift */,
 			);
 			path = Bank;
+			sourceTree = "<group>";
+		};
+		3964EB0F29D546D30018442D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3964EAC829D432050018442D /* SceneDelegate.swift */,
+				3964EAC629D432050018442D /* AppDelegate.swift */,
+				3964EAD229D432080018442D /* Assets.xcassets */,
+				3964EAD429D432080018442D /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		3964EB1429D6F2F70018442D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3964EB1229D6EC190018442D /* Network.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3964EB0B29D46CFC0018442D /* Video.swift in Sources */,
+				3964EB0B29D46CFC0018442D /* TableViewCellModel.swift in Sources */,
 				3964EAFD29D43AF30018442D /* HomePageVC.swift in Sources */,
+				3964EB1329D6EC190018442D /* Network.swift in Sources */,
 				3964EB0E29D470690018442D /* DogBankImages.swift in Sources */,
 				3964EB0729D45E710018442D /* TableViewCell.swift in Sources */,
 				3964EB0329D43DD30018442D /* TableViewController.swift in Sources */,
@@ -316,6 +342,8 @@
 				3964EAC729D432050018442D /* AppDelegate.swift in Sources */,
 				3964EB0529D43DE90018442D /* CollectionViewController.swift in Sources */,
 				3964EAFB29D438F70018442D /* MainTabController.swift in Sources */,
+				3964EB1629D6F3120018442D /* DogsModels.swift in Sources */,
+				3964EB1129D553E30018442D /* PhotoCellCV.swift in Sources */,
 				3964EAC929D432050018442D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
